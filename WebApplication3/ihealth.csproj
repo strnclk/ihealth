@@ -16,11 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ViewComponents\HomeAbout\" />
-    <Folder Include="ViewComponents\CompanySkills\" />
     <Folder Include="ViewComponents\Blogs\" />
-    <Folder Include="ViewComponents\Footer\" />
-    <Folder Include="ViewComponents\Products\" />
   </ItemGroup>
 
 </Project>
