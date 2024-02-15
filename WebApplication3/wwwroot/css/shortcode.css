@@ -524,10 +524,10 @@ div#clock span:first-child {
     position: relative;
     text-align: left;
 }
-    .pbminfotech-ele-fid-style-3 .pbmit-sbox-icon-wrapper {
-        font-size: 60px;
-        color: #CF1E24;
-    }
+.pbminfotech-ele-fid-style-3 .pbmit-sbox-icon-wrapper{
+    font-size: 60px;
+    color: #ee344e;
+}
 .pbminfotech-ele-fid-style-3 .pbmit-fid-inner{
     font-size: 50px;
     color: #fff;
@@ -575,13 +575,13 @@ div#clock span:first-child {
     position: relative;
     color: #fff;
 }
-    .pbminfotech-ele-fid-style-4 .pbmit-fid-title {
-        font-size: 16px;
-        line-height: 20px;
-        font-weight: 700;
-        letter-spacing: 0.5px;
-        color: #CF1E24;
-    }
+.pbminfotech-ele-fid-style-4 .pbmit-fid-title {  
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #ee344e;
+}
 /** Style 5 **/
 .pbminfotech-ele-fid-style-5 {
     background: #fff; 
@@ -602,17 +602,17 @@ div#clock span:first-child {
     position: relative;
     z-index: 9;
 }
-    .pbminfotech-ele-fid-style-5 .pbmit-sbox-icon-wrapper:after {
-        content: ' ';
-        width: 135px;
-        height: 135px;
-        border-radius: 50%;
-        position: absolute;
-        left: -50px;
-        top: -50px;
-        z-index: 0;
-        background-color: #CF1E24;
-    }
+.pbminfotech-ele-fid-style-5 .pbmit-sbox-icon-wrapper:after{
+    content: ' ';
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    position: absolute;
+    left: -50px;
+    top: -50px;
+    z-index: 0;
+    background-color: #ee344e;
+}
 .pbminfotech-ele-fid-style-5 .pbmit-fid-inner{
     font-size: 50px;
     line-height: 50px;
@@ -641,7 +641,7 @@ div#clock span:first-child {
     transition: all 0.5s cubic-bezier(0.645,0.045,0.355,1);
 }
 .pbmit-service-style-1:hover .pbminfotech-post-item {
-    border-color: #CF1E24;
+    border-color: #ee344e;
 }
 .pbmit-service-style-1 .pbmit-featured-wrapper img {
     border-radius:10px;
@@ -682,9 +682,9 @@ div#clock span:first-child {
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-    .pbmit-service-style-1 .pbminfotech-box-content .pbmit-service-cat a {
-        color: #CF1E24 !important;
-    }
+.pbmit-service-style-1 .pbminfotech-box-content .pbmit-service-cat a{
+    color: #ee344e !important;
+}
 .pbmit-service-style-1 .pbmit-service-title {
     font-size: 24px;
     line-height: 32px;
@@ -1025,10 +1025,10 @@ div#clock span:first-child {
 .pbmit-portfolio-style-2 .pbmit-link-icon{
     transition: all .25s ease-in-out;
 }
-    .pbmit-portfolio-style-2:hover .pbmit-content-wrapper {
-        border-color: transparent;
-        background-color: #CF1E24;
-    }
+.pbmit-portfolio-style-2:hover .pbmit-content-wrapper{
+    border-color: transparent;
+    background-color: #ee344e;
+}
 .pbmit-portfolio-style-2:hover h3.pbmit-portfolio-title a,
 .pbmit-portfolio-style-2 h3.pbmit-portfolio-title a:hover,
 .pbmit-portfolio-style-2:hover .pbmit-port-cat a{

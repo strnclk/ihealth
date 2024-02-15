@@ -1,0 +1,239 @@
+﻿@{
+    Layout = null;
+}
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Cardioly Demo2 – Heart and Medical HTML Template</title>
+    <meta name="robots" content="noindex, follow">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="~/images/cropped-fevicon.png">
+    <!-- CSS
+       ============================================ -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="~/css/fontawesome.css">
+    <!-- Flaticon -->
+    <link rel="stylesheet" href="~/css/flaticon.css">
+    <!-- optico Icons -->
+    <link rel="stylesheet" href="~/css/pbminfotech-base-icons.css">
+    <!-- Themify Icons -->
+    <link rel="stylesheet" href="~/css/themify-icons.css">
+    <!-- Slick -->
+    <link rel="stylesheet" href="~/css/swiper.min.css">
+    <!-- Magnific -->
+    <link rel="stylesheet" href="~/css/magnific-popup.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="~/css/aos.css">
+    <!-- Shortcode CSS -->
+    <link rel="stylesheet" href="~/css/shortcode.css">
+    <!-- Base CSS -->
+    <link rel="stylesheet" href="~/css/base.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="~/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="~/css/responsive.css">
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" type="text/css" href="~/revolution/rs6.css">
+</head>
+<body>
+    <!-- page wrapper -->
+    <div class="page-wrapper">
+
+        <header class="site-header header-style-2">
+            <!-- Header Main Area -->
+            @await Component.InvokeAsync("TopInfoComponent")
+            @await Component.InvokeAsync("MenuComponent")
+            @await Component.InvokeAsync("SliderComponent")
+
+        </header>
+        <!-- Header Main Area End Here -->
+        <!-- page content -->
+        <div class="page-content">
+            <!-- About Start -->
+            @await Component.InvokeAsync("HomeAboutComponent")
+            <!-- About End -->
+            <!-- Service Start -->
+            @await Component.InvokeAsync("CategoryComponent")
+            <!-- Service End -->
+            <!-- Our Benefits Start -->
+            <section class="benefits-section-home2">
+                <div class="container g-0">
+                    <div class="row g-0">
+                        <div class="col-xl-3 col-md-12">
+                            <div class="bg-img-section"></div>
+                            <div class="pbmit-ihbox-style-8">
+                                <div class="pbmit-ihbox-box">
+                                    <div class="pbmit-ihbox-wrap">
+                                        <div class="pbmit-ihbox-icon">
+                                            <div class="pbmit-ihbox-icon-wrapper">
+                                                <i class="pbmit-cardioly-icon-speech-bubble"></i>
+                                            </div>
+                                        </div>
+                                        <div class="pbmit-ihbox-contents">
+                                            <h4 class="pbmit-element-heading">
+                                                Call us 24/7
+                                            </h4>
+                                            <h2 class="pbmit-element-title">
+                                                +1 800 123 456 789
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-md-12">
+                            <div class="benefits-right-section">
+                                <div class="benefits-main-section">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="pbmit-heading-subheading">
+                                                <h4 class="pbmit-subtitle">Our Benefits</h4>
+                                                <h2 class="pbmit-title text-white">Bizimle iletişime geçmek ister misiniz ?</h2>
+                                            </div>
+                                            <p>
+                                                Düşünceleriniz ve geridönüşleriniz bizim için çok önemli
+                                            </p>
+                                            <div class="pbmit-ihbox-style-5 mb-5">
+                                                <div class="d-flex">
+                                                    <div class="pbmit-ihbox-icon">
+                                                        <div class="pbmit-ihbox-icon-wrapper">
+                                                            <i class="pbmit-cardioly-icon-heart"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pbmit-ihbox-contents">
+                                                        <h2 class="pbmit-element-title text-white">
+                                                            Consultant's Service Include
+                                                        </h2>
+                                                        <div class="pbmit-heading-desc">
+                                                            We merge two services consultant's and excellent nursing services.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="pbmit-ihbox-style-5">
+                                                <div class="d-flex">
+                                                    <div class="pbmit-ihbox-icon">
+                                                        <div class="pbmit-ihbox-icon-wrapper">
+                                                            <i class="pbmit-cardioly-icon-nurse"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pbmit-ihbox-contents">
+                                                        <h2 class="pbmit-element-title text-white">
+                                                            Excellent Nursing Service
+                                                        </h2>
+                                                        <div class="pbmit-heading-desc">
+                                                            We merge two services consultant's and excellent nursing service.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <form class="contact-form">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="contact-form-section">
+                                                            <input type="text" class="form-control" placeholder="Your Name *" name="Your name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="contact-form-section">
+                                                            <input type="email" class="form-control" placeholder="Your-email*" name="Your-email">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="contact-form-section">
+                                                            <select class="form-select" aria-label="Default select example">
+                                                                <option selected="">Select Your Doctor</option>
+                                                                <option value="1">Dr. Anna Willey</option>
+                                                                <option value="2">Dr. Edward Berry</option>
+                                                                <option value="3">Dr. Eliza William</option>
+                                                                <option value="4">Dr. Charlie Smith</option>
+                                                                <option value="5">Dr. Maria Mitchell</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="contact-form-section">
+                                                            <textarea class="form-control" name="message" rows="4" placeholder="Comment" style="height: 100px;"></textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="contact-form-section">
+                                                            <input type="submit" value="Services at One Glance" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @await Component.InvokeAsync("CompanySkillsComponent")
+            </section>
+            <!-- Our Benefits End -->
+            <!-- Blog Start -->
+            @RenderBody()
+            <!-- Blog End -->
+
+        </div>
+        <!-- page content End -->
+        <!-- footer -->
+        @await Component.InvokeAsync("FooterComponent")
+        <!-- footer End -->
+
+    </div>
+    <!-- page wrapper End -->
+    <!-- Search Box Start Here -->
+    <div class="pbmit-search-overlay">
+        <div class="pbmit-icon-close"></div>
+        <div class="pbmit-search-outer">
+            <form class="pbmit-site-searchform">
+                <input type="search" class="form-control field searchform-s" name="s" placeholder="Type Word Then Press Enter">
+                <button type="submit"><i class="pbmit-base-icon-search-1"></i></button>
+            </form>
+        </div>
+    </div>
+    <!-- Search Box End Here -->
+    <!-- JS
+       ============================================ -->
+    <!-- jQuery JS -->
+    <script src="~/js/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="~/js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="~/js/bootstrap.min.js"></script>
+    <!-- jquery Waypoints JS -->
+    <script src="~/js/jquery.waypoints.min.js"></script>
+    <!-- jquery Appear JS -->
+    <script src="~/js/jquery.appear.js"></script>
+    <!-- Numinate JS -->
+    <script src="~/js/numinate.min.js"></script>
+    <!-- Slick JS -->
+    <script src="~/js/swiper.min.js"></script>
+    <!-- Magnific JS -->
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+    <!-- Circle Progress JS -->
+    <script src="~/js/circle-progress.js"></script>
+    <!-- countdown JS -->
+    <script src="~/js/jquery.countdown.min.js"></script>
+    <!-- AOS -->
+    <script src="~/js/aos.js"></script>
+    <!-- Scripts JS -->
+    <script src="~/js/scripts.js"></script>
+    <!-- Revolution JS -->
+    <script src="~/revolution/rslider.js"></script>
+    <script src="~/revolution/rbtools.min.js"></script>
+    <script src="~/revolution/rs6.min.js"></script>
+</body>
+</html>
