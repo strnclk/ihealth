@@ -296,8 +296,9 @@ body {
 	.site-header.header-style-2 .site-header-menu{
 		padding: 0;
 	}
-	.header-style-2 .pbmit-slider-area{
-		margin-top: 0;
+	.header-style-2 .pbmit-slider-area {
+		width: 100vw; /* Ekran genişliği kadar */
+		height: 100vh; /* Ekran yüksekliği kadar */
 	}
 	.header-style-2 .pbmit-header-search-btn{
 		display: none;

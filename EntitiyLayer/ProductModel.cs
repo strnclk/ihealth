@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 
 namespace EntityLayer
 {
-    public class Product
+    public class ProductModel
     {
         [Key]
-        public int ID { get; set; }
+        public int ProductID { get; set; }
         public string? Image { get; set; }
         public string? Thumbnail { get; set; }
         public string? Text { get; set; }
-        public Category CategoryID { get; set; }
-        public Category Category { get; set; }
+        public int CategoryID { get; set; }
+        public CategoryModel Category { get; set; }
         public double? Price { get; set; }
         public string? ProductWebSite { get; set; }
         public bool Status { get; set; }

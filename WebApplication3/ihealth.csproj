@@ -358,4 +358,9 @@
     <Folder Include="ViewComponents\Blogs\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogicLayer\BusinessLogicLayer.csproj" />
+    <ProjectReference Include="..\EntitiyLayer\EntityLayer.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace EntityLayer
 {
-    public class Communacation
+    public class CommunacationModel
     {
         [Key]
-        public int ID { get; set; }
+        public int CommunacationID { get; set; }
         public string? Image { get; set; }
         public string? Title { get; set; }
         public string? ShortText { get; set; }

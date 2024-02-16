@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace EntityLayer
 {
-    public class Contact
+    public class ContactInformationModel
     {
         [Key]
-        public int ID { get; set; }
+        public int ContactInformationID { get; set; }
         public string? InstagramLink { get; set; }
         public string? FacebookLink { get; set; }
         public string? Email { get; set; }
