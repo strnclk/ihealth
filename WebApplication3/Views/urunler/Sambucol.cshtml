@@ -3,7 +3,7 @@
 }
 <!doctype html>
 <html class="no-js" lang="en">
-
+        
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -49,146 +49,9 @@
     <div class="page-wrapper">
 
          <!-- Header Main Area -->
-         <header class="site-header header-style-1">
-			<div class="site-header-menu">
-				<div class="container-fuild">
-					<div class="d-flex align-items-center justify-content-between">
-					   <div class="site-branding">
-						  <!-- Logo area -->
-						  <h1 class="site-title">
-							 <a href="index.html" rel="home">
-                                    <img class="logo-img" src="~/images/logo.png" alt="Cardioly Demo1" title="Cardioly Demo1">
-							 </a>
-						  </h1>				        
-					   </div>
-					   <div class="flex-grow-1">
-						  <div class="pre-header">
-							 <div class="container-fuild">
-								<div class="d-md-flex justify-content-between">
-								   <div class="pbmit-pre-header-left">
-									  <span class="pbmit-label">Book Online 
-										 <i class="pbmit-base-icon-right"></i>
-									  </span>
-									  <span>You can request appointment in 24 hours</span>
-								   </div>
-								   <div class="pbmit-pre-header-right">
-									  <ul class="pbmit-contact-info">
-										 <li>
-											<i class="pbmit-base-icon-mail-alt"></i> Email  : Support@@.themesion.com
-										 </li>
-										 <li>
-											<i class="pbmit-base-icon-phone"></i> Phone : (+00)888.666.88
-										 </li>
-										 <li>
-											<ul class="pbmit-social-links">
-											   <li class="pbmit-social-li pbmit-social-facebook">
-												  <a href="#" target="_blank">
-													 <i class="pbmit-base-icon-facebook-squared"></i>
-												  </a>
-											   </li>
-											   <li class="pbmit-social-li pbmit-social-twitter">
-												  <a href="#" target="_blank">
-													 <i class="pbmit-base-icon-twitter"></i>
-												  </a>
-											   </li>
-											   <li class="pbmit-social-li pbmit-social-linkedin">
-												  <a href="#" target="_blank">
-													 <i class="pbmit-base-icon-linkedin-squared"></i>
-												  </a>
-											   </li>
-											   <li class="pbmit-social-li pbmit-social-youtube">
-												  <a href="#" target="_blank">
-													 <i class="pbmit-base-icon-youtube-play"></i>
-												  </a>
-											   </li>
-											</ul>
-										 </li>
-									  </ul>						
-								   </div>
-								</div>
-							 </div>
-						  </div>
-						  <div class="site-header-menu-inner">
-							 <div class="container-fuild">
-								<div class="row">
-								   <div class="col-md-12">
-									  <div class="d-flex justify-content-between">
-										 <div class="site-navigation ml-auto">
-											<nav class="main-menu navbar-expand-xl navbar-light">
-												<div class="navbar-header">
-													<!-- Toggle Button --> 
-													<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-														<i class="pbmit-base-icon-menu-1"></i>
-													</button>
-												</div>
-												<div class="collapse navbar-collapse clearfix" id="navbarSupportedContent">
-													<ul class="navigation clearfix">
-														<li class="dropdown">
-															<a href="index.html">Home</a>
-															<ul>
-																<li><a href="index.html">Home page 01</a></li>
-																<li><a href="index-02.html">Home page 02</a></li>
-																<li><a href="index-03.html">Home page 03</a></li>
-															</ul>
-														</li>
-														<li class="dropdown active">
-															<a href="#">Pages</a>
-															<ul>
-																<li><a href="about-us.html">About Us </a></li>
-																<li><a href="about-us2.html">About Us 2</a></li>
-																<li><a href="our-history.html">Our History</a></li>
-																<li><a href="our-plans.html">Our Plans</a></li>                                             
-																<li class="active"><a href="our-team-member.html">Our Team Member</a></li>
-																<li><a href="team-member-details.html">Team Member Details</a></li>
-																<li><a href="faq.html">Faq</a></li>
-															</ul>
-														</li>
-														<li class="dropdown">
-															<a href="#">Service</a>
-															<ul>
-																<li><a href="service-details.html">Service Detail</a></li>
-															</ul>
-														</li>
-														<li class="dropdown">
-															<a href="#">Projects</a>
-															<ul>
-																<li><a href="project-style-1.html">Project Style 1</a></li>
-																<li><a href="project-style-2.html">Project Style 2</a></li>
-																<li><a href="project-single-details.html">Project Single Details</a></li>
-															</ul>
-														</li>
-														<li class="dropdown">
-															<a href="#">Blog</a>
-															<ul>
-																<li><a href="blog-classic.html">Blog Classic</a></li>
-																<li><a href="blog-grid-view.html">Blog Grid View</a></li>
-																<li><a href="blog-details.html">Blog Details</a></li>
-															</ul>
-														</li>
-														<li><a href="contact-us.html">Contact</a></li>
-													</ul>
-												</div>
-											</nav>
-										 </div>
-										 <div class="pbmit-right-box">
-											<div class="pbmit-header-search-btn">
-											   <a href="#"><i class="pbmit-base-icon-search"></i></a>
-											</div>
-											<div class="menu-right-box d-flex align-items-center">
-											   <div class="pbmit-header-button">
-												  <a href="contact-us.html" class="pbmit-btn">Appointment</a>
-											   </div>
-											</div>
-										 </div>
-									  </div>
-								   </div>
-								</div>
-							 </div>
-						  </div>
-					   </div>
-					</div>
-				 </div>
-			 </div>
+        <header class="site-header header-style-1">
+			@await Component.InvokeAsync("TopInfoComponent")
+			@await Component.InvokeAsync("MenuComponent")
 		 </header>
          <!-- Header Main Area End Here -->
 
@@ -199,7 +62,7 @@
                   <div class="pbmit-title-bar-content-inner">
                      <div class="pbmit-tbar">
                         <div class="pbmit-tbar-inner container">
-                           <h1 class="pbmit-tbar-title"> Our Team Member</h1>
+                           <h1 class="pbmit-tbar-title">Sambucol</h1>
                         </div>
                      </div>
                      <div class="pbmit-breadcrumb">
@@ -697,6 +560,6 @@
     <!-- Scripts JS -->
     <script src="~/js/scripts.js"></script>
 </body>
-
 </html>
+
 

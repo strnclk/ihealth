@@ -1462,56 +1462,50 @@ div#clock span:first-child {
     display: none;
 }
 /** Header Style 1 **/
-.header-style-1 .navbar-light {
-    padding-left: 10px;
+.header-style-1 .pbmit-header-overlay {
+    position: unset;
+    z-index: 9;
+    width: 100%;
 }
-.header-style-1 .container{
-    max-width: none;
-    padding: 0;
-}
-.header-style-1 .site-branding {
-    padding-left: 50px;
-    padding-right: 55px;
-    border-right: 1px solid #eee;
-}
-.header-style-1 .site-title {
-    height: 164px;
+.header-style-1 .pbmit-header-overlay .site-header-menu{
+    padding: 0 60px;
 }
 .header-style-1 .pre-header {
     height: 64px;
     line-height: 64px;
-    border-bottom: 1px solid #eee;
-    padding-left: 30px;
-    visibility: visible;
     opacity: 1;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0 80px;
+    visibility: visible;
+    border-bottom: 1px solid #eee;
     -webkit-transition: all 300ms ease;
     transition: all 300ms ease;
-    font-weight: 600;
-    font-size: 14px;
-    color: var(--pbmit-secondary-color);
+    color: var(--pbmit-blackish-color);
+    background-color: var(--pbmit-white-color);
 }
 .header-style-1 .pbmit-pre-header-left .pbmit-label {
     font-weight: 700;
     text-transform: uppercase;
-    margin-right: 6px;
+    margin-right: 15px;
 }
     .header-style-1 .pbmit-pre-header-left .pbmit-label i {
         padding-left: 5px;
         color: #CF1E24;
     }
-.header-style-1 .pbmit-pre-header-left span{
-    color: var(--pbmit-blackish-color);
-}
 .header-style-1 .pbmit-contact-info li {
     display: inline-block;
     padding: 0 15px;
     vertical-align: top;
+}
+.header-style-1 .pbmit-contact-info li i {
+    font-size: 16px;
+    margin-right: 5px;
+}
+.header-style-1  .pbmit-contact-info > li{
     position: relative;
 }
-.header-style-1 .pre-header .pbmit-contact-info > li:last-child:after{
-    display: none;
-}
-.header-style-1 .pre-header .pbmit-contact-info > li:after {
+.header-style-1  .pbmit-contact-info > li:after {
     position: absolute;
     right: 0;
     top: 50%;
@@ -1521,53 +1515,117 @@ div#clock span:first-child {
     width: 1px;
     background-color: #b6bdc4;
 }
-.header-style-1 .pbmit-contact-info li i {
-    margin-right: 5px;
+.header-style-1 .pbmit-contact-info li:last-child{
+    padding-right: 0;
 }
-.header-style-1 .pre-header .pbmit-social-links li {
-    padding: 0 5px;
-}
-.header-style-1 .pbmit-contact-info li i {
-    font-size: 16px;
-}
-.header-style-1 .pbmit-contact-info li i.pbmit-base-icon-phone {
-    font-size: 18px;
-}
-.header-style-1 .pbmit-header-button a{
-    padding: 18px 35px;
-    text-transform: uppercase;
-}
-.header-style-1 .pbmit-right-box {
-    display: flex;
-    align-items: center;
-    margin-right: 30px;
-}
-.header-style-1 .pbmit-header-search-btn a {
-    font-size: 22px;
-    margin-right: 20px;
-}
-.header-style-1 .site-navigation ul.navigation > li > a{
-    height: 100px;
-    line-height: 100px;
-}
-.site-header-menu.sticky-header .logo-img {
-    max-height: 55px;
-}
-.header-style-1 .sticky-header .site-title {
-    line-height: 90px ;
-    height: 90px;
-}
-.header-style-1 .sticky-header .pre-header{
+.header-style-1 .pbmit-contact-info li:last-child:after{
     display: none;
 }
-.header-style-1 .site-header-menu .logo-img.stickylogo, 
-.site-header-menu.sticky-header .logo-img {
-    max-height: 55px;
+.header-style-1 .pbmit-social-links li {
+    padding: 0 5px;
+}
+.header-style-1 .site-branding {
+    height: calc(30px + 50px);
+    padding-left: 20px;
+    margin-right: 90px;
+}
+.header-style-1 .pbmit-logo-menuarea{
+    display: flex!important;
+}
+.header-style-1 .pbmit-header-top-area {
+    background-color: var(--pbmit-global-color);
+    color: var(--pbmit-white-color);
+    height: 50px;
+    line-height: 50px;
+}
+.header-style-1 .site-navigation ul.navigation > li > a{
+    color: var(--pbmit-link-color-normal);
+}
+.header-style-1 .main-menu ul > li.dropdown > a:after{
+    color: var(--pbmit-white-color);
+}
+.header-style-1 .pbmit-header-search-btn a{
+    color: var(--pbmit-link-color-normal);
+}
+.header-style-1 .pbmit-right-box{
+    display: flex;
+    align-items: center;
+}
+.header-style-1 .pbmit-social-links a {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 15px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    color: var(--pbmit-link-color-normal);
+    vertical-align: middle;
+    text-align: center;
+}
+.header-style-1 .pbmit-header-search-btn {
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.header-style-1 .pbmit-social-links a:hover {
+    background: var(--pbmit-white-color);
+    color: var(--pbmit-global-color)!important;
+}
+.header-style-1 .pbmit-header-button a:hover {
+    background-color:var(--pbmit-global-color);
+}
+.header-style-1 .pbmit-header-button a:hover span{
+    color: var(--pbmit-blackish-color);
+}
+.header-style-1 .pbmit-header-button a:hover span:after {
+    color: var(--pbmit-blackish-color);
+}
+.header-style-1 .sticky-header {
+    background-color: var(--pbmit-white-color);
+}
+.header-style-1 .sticky-header .site-branding {
+    height:50px;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: none;
+    margin-top:0;
+}
+.header-style-1 .sticky-header .site-title{
+    padding-top: 0;
+}
+.header-style-1 .site-header-menu.sticky-header .logo-img {
+    max-height: 45px;
+}
+.header-style-1 .site-navigation ul.navigation > li > a{
+    font-weight: 800;
+}
+.header-style-1 .sticky-header .site-navigation ul.navigation > li > a {
+    color: var(--pbmit-blackish-color);
+}
+.header-style-1 .sticky-header .main-menu ul > li.dropdown > a:after {
+    color: var(--pbmit-blackish-color);
+}
+.header-style-1 .sticky-header .pbmit-header-search-btn a {
+    color:  var(--pbmit-blackish-color);
+}
+.header-style-1 .sticky-header .pbmit-header-button a:hover {
+    background-color: var(--pbmit-global-color);
+}
+.header-style-1 .sticky-header .pbmit-header-button a:hover span {
+    color:var(--pbmit-white-color);
+}
+.header-style-1 .sticky-header .pbmit-header-button a:hover span:after {
+    color: var(--pbmit-white-color);
+}
+.header-style-1 .pbmit-social-links .pbmit-social-li:last-child {
+    margin-right: 0;
 }
 /** Header style 2 **/
 .header-style-2 .pbmit-header-overlay {
     position: absolute;
-    z-index: 9;
+    z-index: 19;
     width: 100%;
 }
 .header-style-2 .pbmit-header-overlay .site-header-menu{
