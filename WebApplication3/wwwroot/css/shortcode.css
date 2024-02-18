@@ -441,7 +441,7 @@ body {
     width: 100%;
 }
 .pbmit-team-style-2 .pbminfotech-box-content .pbminfotech-box-team-position{
-    color: var(--pbmit-global-color);
+    color:purple;
 }
 .pbmit-team-style-2  .pbminfotech-box-social-links ul {
     position: absolute;
@@ -457,7 +457,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--pbmit-global-color);
+    background-color:purple;
 }
 .pbmit-team-style-2:hover  .pbminfotech-box-social-links ul{
     right: 0;
