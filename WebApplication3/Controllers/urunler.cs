@@ -16,5 +16,9 @@ namespace ihealth.Controllers
         {
             return View();
         }
+        public IActionResult urunbilgisi()
+        {
+            return View();
+        }
     }
 }

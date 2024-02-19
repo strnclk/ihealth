@@ -1,4 +1,4 @@
-namespace WebApplication3.Models
+namespace ihealth.Models
 {
     public class ErrorViewModel
     {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using WebApplication3.Models;
+using ihealth.Models;
 
 namespace WebApplication3.Controllers
 {
