@@ -144,8 +144,13 @@ body {
 	.testimonial-main-home2 .pbmit-heading-subheading{
 		padding: 60px 0px 244px 0px;
 	}
+	.header-style-2 .site-header-menu-inner {
+		background-color: white;
+		border-radius: 0;
+	}
 	/*=== Homepage 03 ===*/
 	.header-style-3 .site-header-menu-inner{
+		background-color:white;
 		border-radius: 0;
 	}
 	.header-style-3 .site-header-menu-inner .d-flex.align-items-center.justify-content-between {
@@ -297,8 +302,6 @@ body {
 		padding: 0;
 	}
 	.header-style-2 .pbmit-slider-area {
-		width: 100vw; /* Ekran geniþliði kadar */
-		height: 100vh; /* Ekran yüksekliði kadar */
 	}
 	.header-style-2 .pbmit-header-search-btn{
 		display: none;
@@ -316,6 +319,11 @@ body {
 	.section-lg{
 		padding-top: 80px;
         padding-bottom: 50px;
+	}
+	@media (max-width: 768px) {
+		.pbminfotech-ele-fid-style-3 {
+			text-align: center;
+		}
 	}
 	/*=== Homepage 01 ===*/
 	.about-section-home1{
@@ -447,19 +455,15 @@ body {
 	}
 	.pricing-ihbox-section .pbmit-ihbox-style-5{
 		width: 50%;
-	}
 	.pricing-ihbox-section{
 		display: flex;
 		margin: 40px 0 30px 0;
 	}
-	/** Contact **/
 	.contact-section-bg{
 		padding: 0px 0px 80px 0px;
-	}
 	.contact-section-bg .contact-section-left{
 		padding: 60px 10px 0px 20px;
 	}
-	.contact-section-right{
 		padding: 60px 40px 10px 40px;
 	}
 	.contact-section-left .pbmit-social-links {

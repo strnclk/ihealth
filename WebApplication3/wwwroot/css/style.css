@@ -266,8 +266,8 @@
     position: relative;
     margin: 100px 0px 0px -366.5px;
 }
-.benefits-section-home2 .benefits-right-section{
-    background-color: var(--pbmit-global-color);
+.benefits-section-home2 .benefits-right-section {
+    background-color: #ee344e;
     padding: 100px 0px 70px 350px;
     background-image: url(../images/bg/bg-07.jpg);
     border-radius: 8px 0px 0px;

@@ -496,15 +496,17 @@ INDEX:
      display: block;
      width: auto;
 }
- .site-header .site-branding img {
-     display: inline-block;
-     max-width: 100%;
-     height: auto;
-     max-height: 45px;
-     -webkit-transition: all 0.4s ease-in-out;
-     -moz-transition: all 0.4s ease-in-out;
-     -o-transition: all 0.4s ease-in-out;
-     transition: all 0.4s ease-in-out;
+.site-header .site-branding img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    max-height: 45px;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    margin-top: -20px;
+
 }
  .site-navigation ul.navigation > li > a {
      display: block;

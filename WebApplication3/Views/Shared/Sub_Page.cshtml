@@ -1,9 +1,18 @@
-﻿<htm>
+﻿@{
+    Layout = null;
+}
 
-
-    <body>
-
-        <link rel="shortcut icon" type="image/x-icon" href="~/images/cropped-fevicon.png">
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Cardioly Demo2 – Heart and Medical HTML Template</title>
+    <meta name="robots" content="noindex, follow">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="~/images/cropped-fevicon.png">
     <!-- CSS
        ============================================ -->
     <!-- Bootstrap CSS -->
@@ -32,178 +41,54 @@
     <link rel="stylesheet" href="~/css/responsive.css">
     <!-- REVOLUTION STYLE SHEETS -->
     <link rel="stylesheet" type="text/css" href="~/revolution/rs6.css">
+</head>
+<body>
+    <!-- page wrapper -->
+    <div class="page-wrapper">
 
         <header class="site-header header-style-1">
+            <!-- Header Main Area -->
             @await Component.InvokeAsync("TopInfoComponent")
             @await Component.InvokeAsync("MenuComponent")
         </header>
-
         @RenderBody()
+        <!-- Header Main Area End Here -->
+        <!-- footer -->
+        @await Component.InvokeAsync("FooterComponent")
+        <!-- footer End -->
 
-        <footer class="footer site-footer">
-         <div class="footer-wrap pbmit-footer-big-area">
-         </div>
-         <div class="pbmit-footer-widget-area">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-6 col-lg-3">
-                     <div class="widget pbmit-float-menu">
-                        <h3 class="widget-title">Information</h3>
-                        <ul>
-                           <li class="menu-item ">
-                              <a href="#">About Us</a>
-                           </li>
-                           <li class="menu-item ">
-                              <a href="#">Customer</a>
-                           </li>
-                           <li class="menu-item ">
-                              <a href="#">Service</a>
-                           </li>
-                           <li class="menu-item ">
-                              <a href="#">Collections</a>
-                           </li>
-                           <li class="menu-item ">
-                              <a href="#">Best Seller</a>
-                           </li>
-                           <li class="menu-item ">
-                              <a href="#">Careers</a>
-                           </li>
-                           <li class="menu-item ">
-                              <a href="#">Privacy Policy</a>
-                           </li>
-                           <li class="menu-item ">
-                              <a href="#">Change Location</a>
-                           </li>
-                           <li class="menu-item ">
-                              <a href="#">Expert Tips</a>
-                           </li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="col-md-6 col-lg-3">
-                     <div class="pbmit-two-widget">
-                        <div class="widget">
-                           <h3 class="widget-title">Latest News</h3>
-                           <ul class="pbmit-rpw-list">
-                              <li>
-                                 <a href="blog-details.html">
-                                    <span class="pbmit-rpw-img">
-                                                    <img src="~/images/blog/blog-01s.jpg" class="img-fluid" alt="">
-                                    </span>
-                                 </a>
-                                 <span class="pbmit-rpw-content">
-                                    <span class="pbmit-rpw-title"><a href="blog-details.html">Is Running Really Good for the Heart?</a></span>
-                                    <span class="pbmit-rpw-date"><a href="blog-details.html">August 27, 2020</a></span>
-                                 </span>
-                              </li>
-                              <li>
-                                 <a href="blog-details.html">
-                                    <span class="pbmit-rpw-img">
-                                       <img src="~/images/blog/blog-02s.jpg" class="img-fluid" alt="" >
-                                    </span>
-                                 </a>
-                                 <span class="pbmit-rpw-content">
-                                    <span class="pbmit-rpw-title">
-                                       <a href="blog-details.html">Modeling data increase to endovascular therapy</a>
-                                    </span>
-                                    <span class="pbmit-rpw-date">
-                                       <a href="blog-details.html">August 27, 2020</a>
-                                    </span>
-                                 </span>
-                              </li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-md-6 col-lg-3">
-                     <div class="widget">
-                        <h3 class="widget-title">Newsletter</h3>
-                        <div>Sign up today for hints, tips and the latest product news
-                           <div class="pbmit-footer-newsletter">
-                              <input type="email" name="EMAIL" placeholder="Your email address" required="">	
-                              <button type="submit" value="Sign up">Submit 
-                                 <i class="pbmit-base-icon-paper-plane"></i>
-                              </button> 
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-md-6 col-lg-3">
-                     <div class="widget">
-                        <h3 class="widget-title">Opening Hours</h3>
-                        <ul class="pbmit-timelist-list">
-                           <li><span class="pbmit-timelist-li-title">Mon – Tue</span>
-                              <span class="pbmit-timelist-li-value">10:00 – 18:00</span>
-                           </li>
-                           <li><span class="pbmit-timelist-li-title">Wed – Thur</span>
-                              <span class="pbmit-timelist-li-value">10:00 – 17:00</span>
-                           </li>
-                           <li><span class="pbmit-timelist-li-title">Fri – Sat</span>
-                              <span class="pbmit-timelist-li-value">10:00 – 12:30</span>
-                           </li>
-                           <li><span class="pbmit-timelist-li-title">Saturday</span>
-                              <span class="pbmit-timelist-li-value">10:00 – 12:30</span>
-                           </li>
-                           <li><span class="pbmit-timelist-li-title">Sunday</span>
-                              <span class="pbmit-timelist-li-value">Closed</span>
-                           </li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="pbmit-footer-section pbmit-bg-color-global">
-            <div class="container">
-               <div class="pbmit-footer-text-inner">   
-                  <div class="pbmit-footer-copyright-box"> Copyright © 2022 
-                     <a href="index.html">Cardioly Demo1</a>, All Rights Reserved.
-                  </div>
-                  <div class="pbmit-footer-copyright-box mt-sm-3">
-                     <ul>
-                        <li class="pbmit-footer-menu li">
-                           <a href="faq.html">FAQ</a>
-                        </li>
-                        <li class="pbmit-footer-menu li">
-                           <a href="about-us1.html">About Us 1</a>
-                        </li>
-                        <li class="pbmit-footer-menu li">
-                           <a href="contact-us.html">Contact Us</a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </div>	
-      </footer>
+    </div>
+    <!-- page wrapper End -->
 
-        <script src="~/js/jquery.min.js"></script>
-        <!-- Popper JS -->
-        <script src="~/js/popper.min.js"></script>
-        <!-- Bootstrap JS -->
-        <script src="~/js/bootstrap.min.js"></script>
-        <!-- jquery Waypoints JS -->
-        <script src="~/js/jquery.waypoints.min.js"></script>
-        <!-- jquery Appear JS -->
-        <script src="~/js/jquery.appear.js"></script>
-        <!-- Numinate JS -->
-        <script src="~/js/numinate.min.js"></script>
-        <!-- Slick JS -->
-        <script src="~/js/swiper.min.js"></script>
-        <!-- Magnific JS -->
-        <script src="~/js/jquery.magnific-popup.min.js"></script>
-        <!-- Circle Progress JS -->
-        <script src="~/js/circle-progress.js"></script>
-        <!-- countdown JS -->
-        <script src="~/js/jquery.countdown.min.js"></script>
-        <!-- AOS -->
-        <script src="~/js/aos.js"></script>
-        <!-- Scripts JS -->
-        <script src="~/js/scripts.js"></script>
-        <!-- Revolution JS -->
-        <script src="~/revolution/rslider.js"></script>
-        <script src="~/revolution/rbtools.min.js"></script>
-        <script src="~/revolution/rs6.min.js"></script>
-
-    </body>
-</htm>
+    <!-- JS
+       ============================================ -->
+    <!-- jQuery JS -->
+    <script src="~/js/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="~/js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="~/js/bootstrap.min.js"></script>
+    <!-- jquery Waypoints JS -->
+    <script src="~/js/jquery.waypoints.min.js"></script>
+    <!-- jquery Appear JS -->
+    <script src="~/js/jquery.appear.js"></script>
+    <!-- Numinate JS -->
+    <script src="~/js/numinate.min.js"></script>
+    <!-- Slick JS -->
+    <script src="~/js/swiper.min.js"></script>
+    <!-- Magnific JS -->
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+    <!-- Circle Progress JS -->
+    <script src="~/js/circle-progress.js"></script>
+    <!-- countdown JS -->
+    <script src="~/js/jquery.countdown.min.js"></script>
+    <!-- AOS -->
+    <script src="~/js/aos.js"></script>
+    <!-- Scripts JS -->
+    <script src="~/js/scripts.js"></script>
+    <!-- Revolution JS -->
+    <script src="~/revolution/rslider.js"></script>
+    <script src="~/revolution/rbtools.min.js"></script>
+    <script src="~/revolution/rs6.min.js"></script>
+</body>
+</html>
