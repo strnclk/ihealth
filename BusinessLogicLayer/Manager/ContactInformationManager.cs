@@ -1,4 +1,5 @@
 ﻿using BusinessLogicLayer.Service;
+using DataAccessLayer.Astract;
 using EntityLayer;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,12 @@ namespace BusinessLogicLayer.Manager
 {
     public class ContactInformationManager : IGenericService<ContactInformationModel>
     {
+        private IContactInformationDal contactInformatıon;
+        public ContactInformationManager(IContactInformationDal _contactInformation)
+        {
+            contactInformatıon = _contactInformation;
+        }
+
         public void Add(ContactInformationModel value)
         {
             throw new NotImplementedException();
@@ -27,7 +34,7 @@ namespace BusinessLogicLayer.Manager
 
         public List<ContactInformationModel> ListAll()
         {
-            throw new NotImplementedException();
+            return contactInformatıon.GetListAll();
         }
 
         public void Update(ContactInformationModel value)

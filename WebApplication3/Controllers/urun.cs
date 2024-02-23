@@ -2,21 +2,17 @@
 
 namespace ihealth.Controllers
 {
-    public class urunler : Controller
+    public class urun : Controller
     {
-        public IActionResult sambucol()
+        public IActionResult sambucol(string productName)
         {
             return View();
         }
-        public IActionResult proprobiotic()
+        public IActionResult pro_probiotic()
         {
             return View();
         }
         public IActionResult haliborange()
-        {
-            return View();
-        }
-        public IActionResult urunbilgisi()
         {
             return View();
         }

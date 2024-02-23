@@ -1686,7 +1686,7 @@ div#clock span:first-child {
     padding: 0 5px;
 }
 .header-style-2 .site-branding {
-    height: calc(80px + 50px);
+    height: calc(43px + 50px);
     padding-left: 20px;
     margin-right: 90px;
 }
@@ -2140,6 +2140,14 @@ ul.pbmit-timelist-list .pbmit-timelist-li-value {
 .pbmit-title-bar-wrapper {
     background-color: #f6f6f6;
     background-image: url(../images/bg/title.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+.pbmit-title-bar-deneme {
+    background-color: #f6f6f6;
+    background-image: url(../images/bg/titlee.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

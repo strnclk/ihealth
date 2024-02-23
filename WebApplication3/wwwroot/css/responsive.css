@@ -325,6 +325,11 @@ body {
 			text-align: center;
 		}
 	}
+	@media (max-width: 767px) .btx-layout-responsive .font-style-big {
+		font-size: 28px!important;
+	}
+	}
+
 	/*=== Homepage 01 ===*/
 	.about-section-home1{
 		padding: 80px 0px 0px 0px;

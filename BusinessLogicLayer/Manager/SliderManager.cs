@@ -1,4 +1,5 @@
 ﻿using BusinessLogicLayer.Service;
+using DataAccessLayer.Abstract;
 using EntityLayer;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,12 @@ namespace BusinessLogicLayer.Manager
 {
     public class SliderManager : IGenericService<SliderModel>
     {
+        private ISliderDal  slider;
+        public SliderManager(ISliderDal _slider)
+        {
+                slider= _slider;
+        }
+
         public void Add(SliderModel value)
         {
             throw new NotImplementedException();
@@ -27,7 +34,7 @@ namespace BusinessLogicLayer.Manager
 
         public List<SliderModel> ListAll()
         {
-            throw new NotImplementedException();
+            return slider.GetListAll();
         }
 
         public void Update(SliderModel value)

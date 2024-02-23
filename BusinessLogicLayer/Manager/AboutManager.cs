@@ -10,6 +10,8 @@ namespace BusinessLogicLayer.Manager
 {
     public class AboutManager : IGenericService<AboutModel>
     {
+
+
         public void Add(AboutModel value)
         {
             throw new NotImplementedException();

@@ -1,4 +1,7 @@
-﻿<div class="pbmit-header-overlay">
+﻿@using EntityLayer;
+@model List<ContactInformationModel>;
+
+<div class="pbmit-header-overlay">
         <div class="container-fuild">
             <div class="pre-header">
                 <div class="container-fuild">
@@ -6,33 +9,37 @@
                         <div class="pbmit-pre-header-left">
                         </div>
                         <div class="pbmit-pre-header-right">
+                            @foreach (var item in Model)
+                        {
+          
                             <ul class="pbmit-contact-info">
                                 <li>
-                                <i class="pbmit-base-icon-mail-alt"></i> Email  : info@ihealth.com.tr
+                                <i class="pbmit-base-icon-mail-alt"></i> Email  : @item.Email
                                 </li>
                                 <li>
-                                <i class="pbmit-base-icon-phone-volume-solid"></i> Telefon : 0 (212) 274 40 46
+                                <i class="pbmit-base-icon-phone-volume-solid"></i> Telefon : @item.PhoneNumber01
                                 </li>
                                 <li>
                                     <ul class="pbmit-social-links">
                                         <li class="pbmit-social-li pbmit-social-facebook">
-                                        <a href="https://www.facebook.com/ihealthilac" target="_blank">
+                                        <a href="@item.FacebookLink" target="_blank">
                                                 <i class="pbmit-base-icon-facebook-squared"></i>
                                             </a>
                                         </li>
                                         <li class="pbmit-social-li pbmit-social-linkedin">
-                                        <a href="https://www.linkedin.com/company/ihealthsaglik" target="_blank">
+                                        <a href="@item.lınkedinLink" target="_blank">
                                                 <i class="pbmit-base-icon-linkedin-squared"></i>
                                             </a>
                                         </li>
                                     <li class="pbmit-social-li pbmit-social-instagram">
-                                        <a href="https://www.instagram.com/ihealthsaglik/" target="_blank">
+                                        <a href="@item.InstagramLink" target="_blank">
                                             <i class="pbmit-base-icon-instagram"></i>
                                         </a>
                                     </li>
                                     </ul>
                                 </li>
                             </ul>
+                        }
                         </div>
                     </div>
                 </div>

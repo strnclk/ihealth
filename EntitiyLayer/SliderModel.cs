@@ -12,7 +12,9 @@ namespace EntityLayer
     {
         [Key]
         public int SliderID { get; set; }
-        public string? SliderImage { get; set; }
+        public string? SliderImageOne { get; set; }
+        public string? SliderImageTwo { get; set; }
+        public string? SliderImageThree { get; set; }
         public string? Row { get; set; }
         public bool Status { get; set; }
     }

@@ -13,7 +13,7 @@ namespace DataAccessLayer.Concrete
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("");
+            optionsBuilder.UseSqlServer("server=DESKTOP-PJ2UI5D;database=iHealthDB;integrated security=true");
         }
         public DbSet<AboutModel> Abouts { get; set; }
         public DbSet<BlogModel> Blogs { get; set; }

@@ -13,6 +13,7 @@ namespace EntityLayer
         public int ContactInformationID { get; set; }
         public string? InstagramLink { get; set; }
         public string? FacebookLink { get; set; }
+        public string? lınkedinLink { get; set; }
         public string? Email { get; set; }
         public string? PhoneNumber01 { get; set; }
         public string? PhoneNumber02 { get; set; }
